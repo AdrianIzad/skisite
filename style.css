@@ -1,0 +1,205 @@
+.navbar {
+  background-color: #e2e7f1 !important;
+  opacity: 0.8;
+  margin-bottom: 20% !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    background-color: #e2e7f1 !important;
+    opacity: 1;
+    margin-bottom: 20% !important;
+  }
+  .navbar-light .navbar-brand {
+    padding-left: 0% !important;
+  }
+}
+
+.navbar.scrolled {
+  background: #adb6c9 !important;
+  opacity: 1;
+  -webkit-transition: background 1s;
+  transition: background 1s;
+}
+
+.navbar-nav {
+  font-family: "PT Sans", sans-serif;
+  font-size: large;
+  margin-left: auto !important;
+}
+
+.navbar-nav:hover {
+  color: red;
+}
+
+.navbar-nav li {
+  display: inline;
+  padding-right: 50px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: red;
+}
+
+.navbar-light .navbar-brand {
+  padding-left: 5%;
+}
+
+.main {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  opacity: 1;
+}
+
+.main h1 {
+  margin: 0 auto;
+}
+
+.main .bg {
+  min-width: 100vh;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(mainski.jpg) center/cover no-repeat;
+  opacity: 0.4;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.main button {
+  width: 100px;
+  height: 50px;
+  border-radius: 10%;
+  border: 1px solid black;
+  background: #ffeff2;
+}
+
+.main p {
+  padding: 0 10%;
+  text-align: center;
+}
+
+.main button:hover {
+  background: #df8adf;
+}
+
+.hr1 {
+  width: 40%;
+}
+
+.hr2 {
+  width: 20%;
+}
+
+footer {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (1fr)[2];
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: "topInfo topInfo topInfo topInfo" " bottomInfo bottomInfo bottomInfo bottomInfo";
+}
+
+.topInfo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: topInfo;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.topInfo img {
+  width: 100%;
+  height: 70vh;
+}
+
+.topInfo p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 50px;
+  margin: 0 0 !important;
+  background-color: #e2e7f1;
+}
+
+.topInfo p .fas {
+  padding: 10px 0;
+  font-size: 50px;
+}
+
+.bottomInfo {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: bottomInfo;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.bottomInfo img {
+  width: 100%;
+  height: 70vh;
+}
+
+.bottomInfo p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 50px;
+  margin: 0 0 !important;
+  background-color: #e2e7f1;
+}
+
+.bottomInfo p .fas {
+  padding: 10px 0;
+  font-size: 50px;
+}
+/*# sourceMappingURL=style.css.map */
